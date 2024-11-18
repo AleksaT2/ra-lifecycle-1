@@ -1,0 +1,160 @@
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  border: #ada8e8 2px solid;
+  border-radius: 10px;
+  padding: 1vh;
+  width: 80%;
+  background-color: rgb(202, 221, 231);
+  color: #000;
+  margin-bottom: 100px;
+}
+
+form > * {
+  margin: 1vh;
+  padding: 0 5%;
+  color: #000;
+}
+
+form > div {
+  display: flex;
+  flex-direction: column
+}
+
+#zone {
+  color: #000;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.watches{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+
+}
+
+.clock{
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./img/watch.png'),
+
+  radial-gradient(circle, rgb(174, 193, 201) 0%, rgb(25, 48, 60) 11%, rgba(9,25,33,1) 38%);
+  background-size: cover;
+  border-radius: 50%;
+  box-shadow: 0 -15px 15px rgba(134, 134, 134, 0.35),
+  inset 0 -15px 15px #191919,
+  0 15px 15px rgba(134, 134, 134, 0.35),
+  inset 0 15px 15px #191919
+  ;
+}
+
+.clock:before{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #e1dede;
+  border-radius: 50%;
+  z-index: 999;
+}
+
+.clock .hour,
+.clock .min,
+.clock .sec{
+  position: absolute;
+}
+
+.clock .hour, .hr{
+  width: 70px;
+  height: 70px;
+}
+.clock .min, .mn{
+  width: 90px;
+  height: 90px;
+}
+.clock .sec, .sc{
+  width: 100px;
+  height: 100px;
+}
+
+.hr, .mn, .sc{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.hr:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 30px;
+  background-color: #dce3da;
+  z-index: 10;
+  border-radius: 6px 6px 0 0;
+}
+.mn:before{
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 45px;
+  background-color: #fff;
+  z-index: 11;
+  border-radius: 6px 6px 0 0;
+}
+.sc:before{
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 45px;
+  background-color: #fff;
+  z-index: 12;
+  border-radius: 6px 6px 0 0;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 3px;
+  text-align: center;
+}
+
+.delete_btn {
+  border-color: black;
+  width: 17%;
+  position: absolute;
+  right: -20%;
+  top: -10%;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 3px;
+  cursor: pointer;
+
+}
+
+.watch {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 5%;
+}
+
+button {
+  width: 20%;
+}
+
+label {
+  margin-bottom: 3px;
+}
